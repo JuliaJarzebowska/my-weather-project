@@ -1,8 +1,11 @@
-.weather-app {
+.weather-app-wrapper {
   max-width: 600px;
+  margin: 40px auto;
+}
+
+.weather-app {
   border: 1px solid;
   border-radius: 7px;
-  margin: 40px auto;
   padding: 20px;
   font-family: "Roboto Mono", monospace;
   background: radial-gradient(
