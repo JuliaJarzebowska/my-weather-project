@@ -12,6 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>My Weather App</title>
   </head>
   <body>
@@ -20,8 +21,9 @@
         <div class="weather-app">
           <h1>Lisbon</h1>
           <ul>
-            <li>Saturday 16:00</li>
-            <li>Cloudy</li>
+            <li id="date">Saturday, 6 March</li>
+            <li id="hour">12:53</li>
+            <li id="description"></li>
           </ul>
           <div class="row">
             <div class="col-6">
@@ -29,13 +31,12 @@
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="Cloudy"
               />
-              <strong>15</strong> ºC | <a href="#"> ºF </a>
+              <strong id="temperature"></strong> ºC | <a href="#"> ºF </a>
             </div>
             <div class="col-6">
               <ul>
-                <li>Precipitation: 2%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 20km/h</li>
+                <li>Humidity: <span id="humidity"> 73</span>%</li>
+                <li>Wind: <span id="wind">20</span>km/h</li>
               </ul>
             </div>
           </div>
@@ -43,7 +44,7 @@
         <small>
           Link to
           <a href="https://github.com/JuliaJarzebowska/my-weather-project.git"
-            >my GitHub</a
+            >GitHub</a
           >
           by Julia Jarzebowska
         </small>
