@@ -50,16 +50,22 @@ currentHour.innerHTML = `${hour} : ${minutes}`;
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
-  let city = document.querySelector("h1");
-  city.innerHTML = response.data.name;
+  let cityElement = document.querySelector("h1");
+  cityElement.innerHTML = response.data.name;
   let description = document.querySelector("#description");
   description.innerHTML = response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 let apiKey = "1016e76f2b3a8cc6c6c8de1112e515ea";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Lisbon&appid=${apiKey}&units=metric`;
+let city = "Lisbon";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(apiUrl).then(displayTemperature);
