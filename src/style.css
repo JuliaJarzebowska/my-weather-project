@@ -33,3 +33,9 @@ li {
     rgb(255, 247, 220) 57.6%
   );
 }
+.weather-forecast {
+  text-align: center;
+}
+.weather-forecast-temp {
+  font-size: 12px;
+}
