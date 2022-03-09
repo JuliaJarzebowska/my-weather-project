@@ -33,10 +33,3 @@ li {
     rgb(255, 247, 220) 57.6%
   );
 }
-.weather-temperature.active {
-  color: black;
-  cursor: default;
-}
-.weather-temperature.active:hover {
-  text-decoration: none;
-}
