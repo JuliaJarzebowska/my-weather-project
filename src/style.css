@@ -1,6 +1,5 @@
 h1 {
   font-size: 26px;
-  font-weight: 100;
 }
 ul {
   margin: 0;
@@ -11,7 +10,6 @@ li {
   margin: 0;
   padding: 0;
   font-size: 15px;
-  font-weight: 100;
   text-transform: capitalize;
 }
 .weather-app-wrapper {
@@ -26,7 +24,9 @@ li {
   border: 1px solid;
   border-radius: 7px;
   padding: 20px;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Amatic SC", cursive;
+  font-weight: 500;
+  font-size: 28px;
   background: radial-gradient(
     905px at 4.9% 85.8%,
     rgb(255, 243, 242) 0.1%,
