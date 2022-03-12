@@ -127,3 +127,5 @@ function handleSubmit(event) {
 
 let currentCity = document.querySelector("#city-form");
 currentCity.addEventListener("submit", handleSubmit);
+
+search("Lisbon");
